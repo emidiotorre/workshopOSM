@@ -1,8 +1,6 @@
-# workshop su OpenStreetMap Leaflet.js e OpenLayers @ La Scuola Open Source
+# workshop su OpenStreetMap Leaflet.js e OpenLayers
 
----
-
-## Bari 19/20 settembre 2020
+## La Scuola Open Source Bari 19/20 settembre 2020
 
 link utili:
 
