@@ -16,6 +16,12 @@ link utili:
 
 [GeoJSON.io](https://geojson.io)
 
+[GeoDATI](https://geodati.gov.it)
+
+[GeoJSONLint](https://geojsonlint.com/)
+
+[Awesome GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
+
 comandi:
 
 `git clone https://github.com/emidiotorre/workshopOSM.git`
