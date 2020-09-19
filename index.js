@@ -24,6 +24,7 @@ var circle = L.circle(coords.bari, {
 }).addTo(map);
 
 /* L.tileLayer("http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png", {
+  attribution: '© <a href="https://www.openseamap.org/">OpenSeaMap</a> contributors',
   maxZoom: 18,
   tileSize: 512,
   zoomOffset: -1,
