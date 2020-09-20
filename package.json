@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "leaflet": "^1.7.1",
-    "ol": "^6.4.3"
+    "ol": "^6.4.3",
+    "ol-geocoder": "^4.0.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"

@@ -1,4 +1,5 @@
 import "ol/ol.css";
+import "ol-geocoder/dist/ol-geocoder.min.css";
 import Map from "ol/Map";
 import TileLayer from "ol/layer/Tile";
 import { OSM } from "ol/source";
@@ -12,6 +13,7 @@ import {
 import { Heatmap } from "ol/layer";
 import VectorSource from "ol/source/Vector";
 import KML from "ol/format/KML";
+import Geocoder from "ol-geocoder";
 
 const view = new View({
   center: fromLonLat([16.871871, 41.117143], "EPSG:3857"),
@@ -49,4 +51,21 @@ const map = new Map({
   view: view,
 });
 
-view.centerOn([41.117143, 16.871871]);
+var geocoder = new Geocoder("nominatim", {
+  provider: "osm",
+  key: "",
+  lang: "pt-BR", //en-US, fr-FR
+  placeholder: "Search for ...",
+  targetType: "text-input",
+  limit: 5,
+  keepOpen: true,
+});
+map.addControl(geocoder);
+
+geocoder.on("addresschosen", function (evt) {
+  var feature = evt.feature,
+    coord = evt.coordinate,
+    address = evt.address;
+  // some popup solution
+  content.innerHTML = "<p>" + address.formatted + "</p>";
+});
