@@ -10,11 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserlist": "^1.0.0",
     "leaflet": "^1.7.1",
     "ol": "^6.4.3",
     "ol-geocoder": "^4.0.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
+  },
+  "browserlist": [
+    "not op_mob > 1"
+  ],
+  "resolutions": {
+    "parcel/browserslist": "1.0.0"
   }
 }
